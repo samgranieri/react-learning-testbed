@@ -4,13 +4,17 @@ module.exports = {
     es2021: true,
     'jest/globals': true,
   },
-  extends: ['plugin:react/recommended', 'standard-with-typescript', 'prettier'],
+  extends: [
+    'plugin:react/recommended',
+    'standard-with-typescript',
+    'plugin:prettier/recommended',
+  ],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'jest'],
+  plugins: ['react', 'jest', 'prettier'],
   rules: {
     quotes: [
       'error',
@@ -20,7 +24,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
 };
