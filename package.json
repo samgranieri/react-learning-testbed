@@ -6,10 +6,16 @@
     "start": "parcel --open",
     "build": "parcel build",
     "clean": "rimraf ./dist",
-    "lint": "eslint  src/ --ext .js --ext .jsx; prettier src/* -c",
-    "lint-fix": "eslint src/ --ext .js --ext .jsx --fix; prettier src/* --write"
+    "deep_clean": "yarn clean; rimraf .parcel-cache",
+    "lint": "yarn lint-js; yarn lint-css; yarn lint-html",
+    "lint-js": "eslint src/ --ext .js --ext .jsx;",
+    "lint-css": "prettier src/**/*.scss -c",
+    "lint-html": "prettier src/**/*.html -c",
+    "lint-fix": "eslint src/ --ext .js --ext .jsx --fix; prettier src/* --write",
+    "test": "jest"
   },
   "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "@parcel/transformer-sass": "2.8.3",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
