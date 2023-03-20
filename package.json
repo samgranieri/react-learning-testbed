@@ -7,10 +7,9 @@
     "build": "parcel build",
     "clean": "rimraf ./dist",
     "deep_clean": "yarn clean; rimraf .parcel-cache",
-    "lint": "yarn lint-js; yarn lint-css; yarn lint-html",
+    "lint": "yarn lint-js; yarn lint-css-html",
     "lint-js": "eslint src/ --ext .js --ext .jsx;",
-    "lint-css": "prettier src/**/*.scss -c",
-    "lint-html": "prettier src/**/*.html -c",
+    "lint-css-html": "prettier src/**/*.{scss,html} -c",
     "lint-fix": "eslint src/ --ext .js --ext .jsx --fix; prettier src/* --write",
     "test": "jest"
   },
@@ -18,7 +17,9 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "@parcel/transformer-sass": "2.8.3",
+    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard-with-typescript": "^34.0.1",
@@ -36,6 +37,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.9"
   }
 }
