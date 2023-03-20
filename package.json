@@ -1,9 +1,14 @@
 {
   "name": "jsfc",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
   "license": "MIT",
   "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3",
     "parcel": "^2.8.3"
   }
 }
