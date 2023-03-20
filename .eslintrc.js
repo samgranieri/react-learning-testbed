@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'standard-with-typescript'
+    'standard-with-typescript',
+    'prettier'
   ],
   overrides: [
   ],
@@ -17,5 +18,10 @@ module.exports = {
     'react'
   ],
   rules: {
+    "quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": false }
+    ]
   }
 }
