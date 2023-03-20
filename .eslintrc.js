@@ -18,4 +18,9 @@ module.exports = {
       { avoidEscape: true, allowTemplateLiterals: false },
     ],
   },
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
 };
