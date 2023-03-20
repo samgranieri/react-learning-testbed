@@ -4,7 +4,10 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel --open",
-    "build": "parcel build"
+    "build": "parcel build",
+    "clean": "rimraf ./dist",
+    "lint": "eslint  src/ --ext .js --ext .jsx; prettier src/* -c",
+    "lint-fix": "eslint src/ --ext .js --ext .jsx --fix; prettier src/* --write"
   },
   "license": "MIT",
   "devDependencies": {
