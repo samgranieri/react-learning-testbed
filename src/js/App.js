@@ -1,7 +1,5 @@
-// import { createRoot } from 'react-dom'
-import { StrictMode } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-
 import { RichText } from '@graphcms/rich-text-react-renderer'
 
 const content = {
@@ -29,12 +27,4 @@ function App() {
   )
 }
 const rootElement = document.getElementById('navigation')
-// const root = createRoot(domNode)
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  rootElement
-)
-
-// root.render(<App />)
+ReactDOM.render(<App />, rootElement)
