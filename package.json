@@ -39,9 +39,8 @@
     "@graphcms/rich-text-react-renderer": "^0.6.1",
     "graphql": "^16.6.0",
     "graphql-request": "^5.2.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-is": "16.13.1",
+    "react": "15.7.0",
+    "react-dom": "15.7.0",
     "styled-components": "^5.3.9"
   }
 }
